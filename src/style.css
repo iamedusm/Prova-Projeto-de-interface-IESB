@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff9e;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.header {
+    max-width: 1140px;
+    height: 100px;
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    display: flex;
+    margin-left: 200px;
+    width: 120px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+    display: flex;
+
+}
+
+.menu li a {
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    color: #ccc;
+}
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #ccc;
+    background-image: url("./compras.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.area_texto {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 40px;
+}
+
+h2 {
+    color: orangered;
+    overflow: hidden;
+    border-right: 2px solid orangered;
+    white-space: nowrap;
+    animation:
+        typing 3s steps(20, end) forwards;
+    font-size: 40px;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 509px
+    }
+}
+
+
+.sobre {
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.sobre .titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sobre .conteudo {
+    font-size: 15px;
+}
+
+.input_form {
+    display: block;
+    width: 100%;
+    padding: 5px 5px;
+    font-weight: 400;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border-radius: 10px;
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    background-color: #007bff;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 15px 200px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+
+table {
+    margin: auto;
+    width: 500px;
+}
+
+.conteudo img {
+    max-width: 50%;
+}
+
+.produtos img {
+    max-width: 30%;
+}
+
+.listas {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    white-space: nowrap
+}
+
+.listas ul {
+    padding: 100px;
+}
+
+
+.listas li {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.listas ul li a {
+    color: #495057;
+    text-decoration: none;
+}
+
+#formulario {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

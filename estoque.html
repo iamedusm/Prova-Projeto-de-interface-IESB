@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div class="logoimg">
+                    <img src="./src/logo.png" alt="Logo sistema">
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="formulario.html">Formulário</a></li>
+                    <li><a href="listas.html">Acesso Rápido</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="sobre">
+            <div class="titulo">
+                <h1>Produtos em Estoque</h1>
+            </div>
+            <div class="conteudo">
+                <table border="1">
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Estoque</th>
+                        <th>Preço</th>
+                        <th>Comprar</th>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.heineken.com/media-la/01pfxdqq/heineken-original-bottle.png?quality=85"
+                                alt="heineken"></td>
+                        <td>Cerveja Heineken</td>
+                        <td>Long Neck</td>
+                        <td>100 Un</td>
+                        <td>R$ 7,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://hiperideal.vteximg.com.br/arquivos/ids/185616-1000-1000/1965328.jpg?v=637359406584800000"
+                                alt="heineken"></td>
+                        <td>Cerveja Devassa</td>
+                        <td>lata</td>
+                        <td>200 Un</td>
+                        <td>R$ 5,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cf.shopee.com.br/file/8edc379add11dc14097fc88b6ef029cb" alt="heineken">
+                        </td>
+                        <td>Cerveja Antartica</td>
+                        <td>Lata</td>
+                        <td>300 Un</td>
+                        <td>R$ 3,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.bistek.com.br/media/catalog/product/cache/15b2f1f06e1cd470c80b1f3fd7ec8301/9/9/990710.jpg"
+                                alt="heineken"></td>
+                        <td>Cerveja Brahma</td>
+                        <td>Lata</td>
+                        <td>400 Un</td>
+                        <td>R$ 2,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.imigrantesbebidas.com.br/bebida/images/products/full/132_Cerveja_Skol_Pilsen_Lata_350ml.jpg"
+                                alt="heineken"></td>
+                        <td>Cerveja Skol</td>
+                        <td>lata</td>
+                        <td>500 Un</td>
+                        <td>R$ 1,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://static.distribuidoracaue.com.br/media/catalog/product/cache/1/thumbnail/600x800/9df78eab33525d08d6e5fb8d27136e95/r/e/refrigerante-coca-cola-2-litros.jpg"
+                                alt="heineken"></td>
+                        <td>Coca-cola 2lt</td>
+                        <td>Pet</td>
+                        <td>500 Un</td>
+                        <td>R$ 5,50</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.mybest-brazil.com.br/press_component/item_part_images/2d6cc5b89458368571c958526cccb39c.png?ixlib=rails-4.2.0&q=70&lossless=0&w=640&h=640&fit=clip&s=febdc40b7a6ca8df33ef360b669ed3d5"
+                                alt="heineken"></td>
+                        <td>Arroz Pct 5kg</td>
+                        <td>Tipo 1</td>
+                        <td>500 Un</td>
+                        <td>R$ 30,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://d6scj24zvfbbo.cloudfront.net/763b288810bf7c34113a93db26009aec/200003438-84c8585c30/700/171.png?ph=f7781c6835"
+                                alt="heineken"></td>
+                        <td>Feijão Pct 1kg</td>
+                        <td>Tipo 1</td>
+                        <td>500 Un</td>
+                        <td>R$ 12,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://a-static.mlcdn.com.br/1500x1500/detergente-liquido-ype-neutro-500ml/costaatacado/90146/bc45e8e91700e557fe42944c14353cac.jpg"
+                                alt="heineken"></td>
+                        <td>Detergente 500ml</td>
+                        <td>Neutro</td>
+                        <td>500 Un</td>
+                        <td>R$ 5,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://static.clubeextra.com.br/img/uploads/1/350/590350.png" alt="heineken">
+                        </td>
+                        <td>Òleo de soja 900ml</td>
+                        <td>Soya</td>
+                        <td>500 Un</td>
+                        <td>R$ 25,00</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://d6scj24zvfbbo.cloudfront.net/763b288810bf7c34113a93db26009aec/200005701-9217692178/700/57-0.jpg?ph=f7781c6835"
+                                alt="heineken"></td>
+                        <td>Macarrão</td>
+                        <td>Pacote 500g</td>
+                        <td>500 Un</td>
+                        <td>R$ 1,59</td>
+                        <td><input type="button" onclick="comprar()" value="Comprar"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="./src/script.js"></script>
+    </main>
+</body>
+
+</html>

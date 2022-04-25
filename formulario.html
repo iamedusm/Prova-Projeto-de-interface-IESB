@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div class="logoimg">
+                    <img src="./src/logo.png" alt="Logo sistema">
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="formulario.html">Formulário</a></li>
+                    <li><a href="listas.html">Acesso Rápido</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <form method="POST" action="#">
+                <h1>Envie nos um e-mail</h1>
+                <label for="nome">Digite seu nome
+                    <input type="text" id="nome" class="input_form" required autofocus placeholder="Digite seu nome">
+                </label><br>
+                <label for="email">Digite seu e-mail
+                    <input type="email" id="email" class="input_form" required placeholder="Digite seu e-mail">
+                </label><br>
+                <label for="telefone">Digite seu telefone
+                    <input type="number" id="telefone" class="input_form" placeholder="Digite seu telefone">
+                </label><br><br>
+                <label for="msg">Mensagem<br>
+                    <textarea id="msg" rows="4" cols="50" class="input_form" required
+                        placeholder="Digite sua mensagem"></textarea>
+                </label><br><br>
+                <input onclick="enviar()" class="button" type="button" value="Enviar">
+            </form>
+        </div>
+        <div id="formulario">
+
+        </div>
+
+    </main>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
